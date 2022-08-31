@@ -8,13 +8,5 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class TreesApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(TreesApplication.class, args);
-        Oak a = new Oak();
-
-        a.grow();
-        a.grow();
-        a.grow();
-        a.grow();
-        a.grow();
     }
 }
