@@ -14,6 +14,6 @@ public class Trunk<B extends AbstractBranch<B, L>, L extends AbstractLeaf> exten
 
     @Override
     public boolean hasLeaves() {
-        return branches.stream().anyMatch(AbstractBranch::hasLeaves);
+        return branchesHaveLeaves();
     }
 }

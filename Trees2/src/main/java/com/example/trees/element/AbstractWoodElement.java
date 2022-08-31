@@ -49,6 +49,9 @@ public abstract class AbstractWoodElement<B extends AbstractBranch<B, L>, L exte
     public boolean hasBranches() {
         return !branches.isEmpty();
     }
+    public boolean branchesHaveLeaves() {
+        return branches.stream().anyMatch(AbstractBranch::hasLeaves);
+    }
 
     public abstract boolean hasLeaves();
 }

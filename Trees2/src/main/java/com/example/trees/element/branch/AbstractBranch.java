@@ -38,6 +38,6 @@ public abstract class AbstractBranch<B extends AbstractBranch<B, L>, L extends A
     }
 
     public boolean hasLeaves() {
-        return !leaves.isEmpty();
+        return !leaves.isEmpty() || branchesHaveLeaves();
     }
 }
