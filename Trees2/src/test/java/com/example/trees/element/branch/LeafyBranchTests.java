@@ -85,7 +85,7 @@ public class LeafyBranchTests {
     }
 
     @Test
-    @DisplayName("Test if growLeaves function of LeafyBranch adds leaves.")
+    @DisplayName("Test if dropLeaves function of LeafyBranch drops leaves.")
     public void leafyBranchDropLeafTest() {
         TestTree tree = new TestTree();
 
